@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: 1s ease;
+}
+body{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+}
+
+.main{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+button{
+    padding: 20px;
+    color: black;
+    cursor: pointer;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.main-1:hover ~.container{
+    transform: translate( 80px ,  80px);
+}
+
+.main-2:hover~.container{
+    transform: scale(1.5);
+}
+
+.main-3:hover~.container{
+    transform: rotate(360deg);
+}
+
+.main-4:hover~.container{
+    transform: skew(20deg , 20deg);
+}
